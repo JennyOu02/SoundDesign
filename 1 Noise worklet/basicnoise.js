@@ -6,7 +6,7 @@ registerProcessor('noise-generator',class extends AudioWorkletProcessor {
 
 //     for (let i=0;i<outputs[0][0].length;++i) outputs[0][0][i]=2*Math.random()-1
     for (let i=outputs[0][0].length;i<outputs[0][1].length;++i) outputs[0][1][i]=2*Math.random()-1
-
+    console.log(outputs[0][1].length)
     return true
   }
 })
